@@ -1,0 +1,30 @@
+- Create a Tshirt store Database 
+
+CREATE TABLE Felipe (id INTEGER PRIMARY KEY,product TEXT, date_of_purchase INTEGER,seller TEXT,price INTEGER);
+
+INSERT INTO Felipe VALUES (1,"FreshThreads",12102022,"Seller3",16);
+INSERT INTO Felipe VALUES (2,"UrbanStyle",12142022,"Seller3",12);
+INSERT INTO Felipe VALUES (3,"RetroVibe",12112022,"Seller3",12);
+INSERT INTO Felipe VALUES (4,"AdventureWear",12022022,"Seller3",17);
+INSERT INTO Felipe VALUES (5,"SereneSunsets",12022022,"Seller3",22);
+INSERT INTO Felipe VALUES (6,"Expressive",12022022,"Seller3",23);
+INSERT INTO Felipe VALUES (7,"ChillCottons",12022022,"Seller3",25);
+INSERT INTO Felipe VALUES (8,"ActiveMotion",12022022,"Seller3",18);
+INSERT INTO Felipe VALUES (9,"GraphicGalore",12022022,"Seller1",17);
+INSERT INTO Felipe VALUES (10,"TrendyTones",12022022,"Seller1",17);
+INSERT INTO Felipe VALUES (11,"NatureVenture",12022022,"Seller1",17);
+INSERT INTO Felipe VALUES (12,"VintageWhisper",12022022,"Seller2",17);
+INSERT INTO Felipe VALUES (13,"SportySwag",12022022,"Seller2",16);
+INSERT INTO Felipe VALUES (14,"BoldExpressions",12022022,"Seller2",22);
+INSERT INTO Felipe VALUES (15,"WanderlustWear",12022022,"Seller2",22);
+
+- Display the database ordered by price 
+SELECT * FROM Felipe ORDER BY price desc;
+
+
+- What is the average price of the Tshirts 
+SELECT * FROM Felipe;
+SELECT AVG(price) FROM Felipe;
+
+
+
